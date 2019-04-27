@@ -1,0 +1,101 @@
+class State:
+def getEntryAction() only callEd when the state is entered from a transition
+def getExitAction()  only called when the state is exited
+def getAction()// rest of the time that the state is active
+def getTransitions()  should return a list of transitions that are outgoing from this state
+
+//test() SHOULD BE WHAT WOULD BE THE IF STATEMENTS FOR EACH TRANSITION IF THIS WASN'T A STATE MACHINE
+--------------------------
+
+class Transition:
+def isTriggered() returns true if the transition can fire
+def getTargetState() reports which state to transition to,
+def getAction() eturns a list of actions to carry out when the transition fires
+
+--------------------------
+
+class FloatCondition (Condition):
+minValue
+maxValue
+testValue # Pointer to the game data we’re interested in
+bool test():
+return minValue <= testValue <= maxValue
+
+--------------------------
+
+class AndCondition (Condition):
+conditionA
+conditionB
+def test():
+return conditionA.test() && conditionB.test()
+
+--------------------------
+
+class NotCondition (Condition):
+condition
+def test():
+return !condition.test()
+
+--------------------------
+
+class OrCondition (Condition):
+conditionA
+conditionB
+def test():
+return conditionA.test() || conditionB.test()
+
+--------------------------
+class StateMachine:
+
+# Holds a list of states for the machine
+
+ states[]
+
+
+# Holds the initial state
+initialState
+
+# Holds the current state
+
+currentState = initialState
+
+# Checks and applies transitions, returning a list of actions.
+def update():
+{
+	for(;;)
+	{
+		states[i].istriggered()
+	}
+}
+# Assume no transition is triggered
+
+triggeredTransition = None
+
+# Check through each transition and store the first
+# one that triggers.
+
+for transition in currentState.getTransitions():
+if transition.isTriggered():
+triggeredTransition = transition
+break
+
+# Check if we have a transition to fire
+if triggeredTransition:
+# Find the target state
+targetState = triggeredTransition.getTargetState()
+
+# Add the exit action of the old state, the
+# transition action and the entry for the new state.
+
+actions = currentState.getExitAction()
+actions += triggeredTransition.getAction()
+actions += targetState.getEntryAction()
+
+# Complete the transition and return the action list
+
+currentState = targetState
+return actions
+
+# Otherwise just return the current state’s actions
+
+else: return currentState.getAction()

@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Headers\ArriveSteering.h" />
+    <ClInclude Include="Headers\Color.h" />
+    <ClInclude Include="Headers\Component.h" />
+    <ClInclude Include="Headers\ComponentManager.h" />
+    <ClInclude Include="Headers\Defines.h" />
+    <ClInclude Include="Headers\EndGameMessage.h" />
+    <ClInclude Include="Headers\Font.h" />
+    <ClInclude Include="Headers\Game.h" />
+    <ClInclude Include="Headers\GameMessage.h" />
+    <ClInclude Include="Headers\GameMessageManager.h" />
+    <ClInclude Include="Headers\GraphicsBuffer.h" />
+    <ClInclude Include="Headers\GraphicsBufferManager.h" />
+    <ClInclude Include="Headers\GraphicsSystem.h" />
+    <ClInclude Include="Headers\InputManager.h" />
+    <ClInclude Include="Headers\PhysicsComponent.h" />
+    <ClInclude Include="Headers\PlayerMoveToMessage.h" />
+    <ClInclude Include="Headers\PositionComponent.h" />
+    <ClInclude Include="Headers\Renderer.h" />
+    <ClInclude Include="Headers\SeekSteering.h" />
+    <ClInclude Include="Headers\Sprite.h" />
+    <ClInclude Include="Headers\SpriteManager.h" />
+    <ClInclude Include="Headers\Steering.h" />
+    <ClInclude Include="Headers\SteeringComponent.h" />
+    <ClInclude Include="Headers\Trajectory.h" />
+    <ClInclude Include="Headers\Unit.h" />
+    <ClInclude Include="Headers\UnitManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\ArriveSteering.cpp" />
+    <ClCompile Include="Source\Color.cpp" />
+    <ClCompile Include="Source\Component.cpp" />
+    <ClCompile Include="Source\ComponentManager.cpp" />
+    <ClCompile Include="Source\EndGameMessage.cpp" />
+    <ClCompile Include="Source\Font.cpp" />
+    <ClCompile Include="Source\Game.cpp" />
+    <ClCompile Include="Source\GameMessage.cpp" />
+    <ClCompile Include="Source\GameMessageManager.cpp" />
+    <ClCompile Include="Source\GraphicsBuffer.cpp" />
+    <ClCompile Include="Source\GraphicsBufferManager.cpp" />
+    <ClCompile Include="Source\GraphicsSystem.cpp" />
+    <ClCompile Include="Source\InputManager.cpp" />
+    <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Source\PhysicsComponent.cpp" />
+    <ClCompile Include="Source\PlayerMoveToMessage.cpp" />
+    <ClCompile Include="Source\PositionComponent.cpp" />
+    <ClCompile Include="Source\Renderer.cpp" />
+    <ClCompile Include="Source\SeekSteering.cpp" />
+    <ClCompile Include="Source\Sprite.cpp" />
+    <ClCompile Include="Source\SpriteManager.cpp" />
+    <ClCompile Include="Source\Steering.cpp" />
+    <ClCompile Include="Source\SteeringComponent.cpp" />
+    <ClCompile Include="Source\Trajectory.cpp" />
+    <ClCompile Include="Source\Unit.cpp" />
+    <ClCompile Include="Source\UnitManager.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{07ED8114-0659-4424-9468-50DBBEA5882A}</ProjectGuid>
+    <RootNamespace>allegrotest</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>steering</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(LibraryPath)</LibraryPath>
+    <SourcePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SourcePath);$./Source</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\..\DeanLib\include;..\..\external libs\SDL2\SDL\include;./Headers</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;DeanLibDebug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\..\external libs\SDL2\SDL\lib\win32;..\..\DeanLib\lib</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\..\DeanLib\include;..\..\External Libs\Allegro5\include;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\..\External libs\Allegro5\lib;..\..\DeanLib\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>allegro-5.0.10-monolith-md.lib;DeanLibRelease.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

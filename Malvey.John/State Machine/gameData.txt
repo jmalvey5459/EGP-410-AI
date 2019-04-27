@@ -1,0 +1,17 @@
+enemyHealth: 50
+enemyDamage: 15
+enemySpawnRate: 3
+enemyDamageRadius: 100
+enemySeekRadius: 200
+playerHealth: 200
+playerSpeedMult: 3
+playerDamage: 25
+playerDamageRadius: 150
+healthUpSpawnRate: 3
+healthUpValue: 25
+speedUpSpawnRate: 2
+speedUpValue: 2
+speedUpDuration: 3
+damageUpSpawnRate: 1
+damageUpValue: 2
+damageUpDuration: 10
